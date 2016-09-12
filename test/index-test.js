@@ -1,2 +1,2 @@
-const React = require('react');
-const { shallow } = require('enzyme');
+require('./DumbComponent_test');
+require('./DumberComponent_test');
