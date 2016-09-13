@@ -8,6 +8,7 @@ class DumbComponent extends Component {
     this.state = {
       mood: 'happy'
     };
+
     this.handleClick = this.handleClick.bind(this);
   }
 
