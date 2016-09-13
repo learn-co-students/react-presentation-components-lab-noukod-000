@@ -32,7 +32,7 @@ The specs for our `DumbComponent` are as follows:
 4. The component should simply render its current `mood` state to the page in
    a div.
 5. The component should implement a `handleClick` function that can serve as a
-   callback to the <div>'s click event. When clicked the component's mood 
+   callback to the `<div>`'s click event. When clicked the component's mood 
    should toggle between happy and sad states.
 
 The fact that this components mood fluctuates when clicked,
