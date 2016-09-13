@@ -35,7 +35,7 @@ The specs for our `DumbComponent` are as follows:
    callback to the `<div>`'s click event. When clicked the component's mood 
    should toggle between happy and sad states.
 
-The fact that this components mood fluctuates when clicked,
+The fact that this component's mood fluctuates when clicked,
 while part of our design, makes it a more unpredictable part of our UI. As our
 program runs, and users interact with it, we won't be able to predict what
 state our component is in. Obviously, many components need state -- because our
