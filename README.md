@@ -52,8 +52,8 @@ following specifications:
 1. In the `components/DumberComponent.js` file, create a `DumberComponent` component.
 2. The component should be a "stateless functional" component.
 3. It should render a `<div>` to the page that contains the text: "I am just happy".
-4. It should receiving one property called `handleClick` that sends a message
-   to the browser via the `alert` method.
+4. It should receive one property called `handleClick` that performs some sort of
+   action in response to a click -- your choice!
 
 When you've finished this component, take a moment to compare it to the previous
 presentational component we wrote. See how much more stable it is? It has no ability
