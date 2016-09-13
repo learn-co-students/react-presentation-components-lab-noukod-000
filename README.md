@@ -61,8 +61,9 @@ to change its output internally. We can always know, based on the props that we
 provide, what type of component it will produce. Note, as well, that this doesn't mean
 that the component lacks interactivity. We can actually determine a wide variety of
 click behaviors on the component just by providing a different callback. It's just that
-the component cannot itself determine its behavior. And this kind of "dumbness" is
-actually a good thing.
+the component itself cannot determine its behavior. This kind of "dumbness" is
+actually a good thing because it makes our component simpler, more predictable,
+and easier to maintain.
 
 ## Resources
 - Dan Abramov, ["Presentational and Container Components"](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.quaiihhh3)
