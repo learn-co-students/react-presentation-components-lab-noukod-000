@@ -40,7 +40,7 @@ while part of our design, makes it a more unpredictable part of our UI. As our
 program runs, and users interact with it, we won't be able to predict what
 state our component is in. Obviously, many components need state -- because our
 are UIs are interactive -- but where possible it's good to avoid
-state entirely, as we will in the second component in this lab.
+state entirely, as we will see in the second component in this lab.
 
 ## DumberComponent
 
