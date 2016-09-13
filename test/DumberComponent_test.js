@@ -17,7 +17,7 @@ describe('<DumberComponent />', () => {
   it('should be a stateless functional component', () => {
     const tryToGetState = () => { wrapper.state(); }
     expect(tryToGetState).toThrow(
-      'ShallowWrapper::state() can only be caLled on class components',
+      'ShallowWrapper::state() can only be called on class components',
       'Component should not have state.'
     );
   });
