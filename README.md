@@ -32,15 +32,15 @@ The specs for our `DumbComponent` are as follows:
 4. The component should simply render its current `mood` state to the page in
    a div.
 5. The component should implement a `handleClick` function that can serve as a
-   callback to the <div>'s click event. When clicked the component's mood 
+   callback to the `<div>`'s click event. When clicked the component's mood 
    should toggle between happy and sad states.
 
-The fact that this components mood fluctuates when clicked,
+The fact that this component's mood fluctuates when clicked,
 while part of our design, makes it a more unpredictable part of our UI. As our
 program runs, and users interact with it, we won't be able to predict what
 state our component is in. Obviously, many components need state -- because our
 are UIs are interactive -- but where possible it's good to avoid
-state entirely, as we will in the second component in this lab.
+state entirely, as we will see in the second component in this lab.
 
 ## DumberComponent
 
@@ -52,8 +52,8 @@ following specifications:
 1. In the `components/DumberComponent.js` file, create a `DumberComponent` component.
 2. The component should be a "stateless functional" component.
 3. It should render a `<div>` to the page that contains the text: "I am just happy".
-4. It should receiving one property called `handleClick` that sends a message
-   to the browser via the `alert` method.
+4. It should receive one property called `handleClick` that performs some sort of
+   action in response to a click -- your choice!
 
 When you've finished this component, take a moment to compare it to the previous
 presentational component we wrote. See how much more stable it is? It has no ability
@@ -61,8 +61,9 @@ to change its output internally. We can always know, based on the props that we
 provide, what type of component it will produce. Note, as well, that this doesn't mean
 that the component lacks interactivity. We can actually determine a wide variety of
 click behaviors on the component just by providing a different callback. It's just that
-the component cannot itself determine its behavior. And this kind of "dumbness" is
-actually a good thing.
+the component itself cannot determine its behavior. This kind of "dumbness" is
+actually a good thing because it makes our component simpler, more predictable,
+and easier to maintain.
 
 ## Resources
 - Dan Abramov, ["Presentational and Container Components"](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.quaiihhh3)
