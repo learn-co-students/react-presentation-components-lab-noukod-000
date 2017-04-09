@@ -1,9 +1,9 @@
-const React = require('react');
-const { shallow } = require('enzyme');
-const sinon = require('sinon');
+import React from 'react';
+import { shallow } from 'enzyme';
+import sinon from 'sinon';
 
 const Noop = (props) => { return <p>Noop</p> };
-const DumberComponent = require('../components/DumberComponent');
+import DumberComponent from '../components/DumberComponent';
 
 describe('<DumberComponent />', () => {
   let wrapper, spy;

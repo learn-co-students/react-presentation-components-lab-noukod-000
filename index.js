@@ -1,8 +1,8 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const DumbComponent = require('./components/DumbComponent');
-const DumberComponent = require('./components/DumberComponent');
+import DumbComponent from './components/DumbComponent';
+import DumberComponent from './components/DumberComponent';
 
 ReactDOM.render(
   <div>

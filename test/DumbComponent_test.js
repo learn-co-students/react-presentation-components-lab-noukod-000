@@ -1,8 +1,8 @@
-const React = require('react');
-const { shallow } = require('enzyme');
+import React from 'react';
+import { shallow } from 'enzyme';
 
 const Noop = (props) => { return <p>Noop</p> };
-const DumbComponent = require('../components/DumbComponent');
+import DumbComponent from '../components/DumbComponent';
 
 describe('<DumbComponent />', function() {
   let wrapper;
@@ -54,4 +54,3 @@ describe('<DumbComponent />', function() {
   });
 
 });
-
