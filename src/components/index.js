@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import DumbComponent from './components/DumbComponent';
-import DumberComponent from './components/DumberComponent';
+import SimpleComponent from './components/SimpleComponent';
+import SimplerComponent from './components/SimplerComponent';
 
 ReactDOM.render(
   <div>
-    <DumbComponent />
-    <DumberComponent handleClick={undefined} />
+    <SimpleComponent />
+    <SimplerComponent handleClick={undefined} />
   </div>,
-  document.getElementById('main')
+  document.getElementById('root')
 );
-
-require('./test/index-test.js'); // leave this in!
