@@ -22,7 +22,7 @@ The specs for our `DumbComponent` are as follows:
 4. The component should simply render its current `mood` state to the page in a div.
 5. The component should implement a `handleClick` function that can serve as a callback to the `<div>`'s click event. When clicked the component's mood should toggle between happy and sad states.
 
-The fact that this component's mood fluctuates when clicked, while part of our design, makes it a more unpredictable part of our UI. As our program runs, and users interact with it, we won't be able to predict what state our component is in. Obviously, many components need state -- because our are UIs are interactive -- but where possible it's good to avoid state entirely, as we will see in the second component in this lab.
+The fact that this component's mood fluctuates when clicked, while part of our design, makes it a more unpredictable part of our UI. As our program runs, and users interact with it, we won't be able to predict what state our component is in. Obviously, many components need state -- because our UIs are interactive -- but where possible it's good to avoid state entirely, as we will see in the second component in this lab.
 
 ## DumberComponent
 
@@ -38,3 +38,5 @@ When you've finished this component, take a moment to compare it to the previous
 ## Resources
 - Dan Abramov, ["Presentational and Container Components"](https://medium.com/@dan_abramov/smart-and-dumb-components 7ca2f9a7c7d0#.quaiihhh3)
 - [Stateless Functions](https://facebook.github.io/react/docs/reusable-components.html#stateless-functions)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/react-presentation-components-lab'>Presentation Components Lab</a> on Learn.co and start learning to code for free.</p>
