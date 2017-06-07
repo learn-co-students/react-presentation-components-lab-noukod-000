@@ -1,37 +1,35 @@
 import React from 'react';
+import { expect } from 'chai';
 import { shallow } from 'enzyme';
 
-const Noop = (props) => { return <p>Noop</p> };
-import DumbComponent from '../components/DumbComponent';
+import SimpleComponent from '../src/components/SimpleComponent';
 
-describe('<DumbComponent />', function() {
+const Noop = (props) => { return <p>Noop</p> };
+
+describe('<SimpleComponent />', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = !DumbComponent.prototype ?
-      shallow(<Noop />) : shallow(<DumbComponent />);
+    wrapper = !SimpleComponent.prototype ?
+      shallow(<Noop />) : shallow(<SimpleComponent />);
   });
 
   it('has state', () => {
-    expect(wrapper.state()).toExist('Component should have state.');
+    expect(wrapper.state(), 'Component should have state.').to.exist;
   });
 
-  it('has state property `mood`', function() {
-    expect(wrapper.state()).toIncludeKey(
-      'mood',
-      null,
-      'Component should have `mood` state property'
-    );
+  it('has state property `mood`', () => {
+    expect(wrapper.state()).to.have.key('mood');
   });
 
   it('default `mood` state should be "happy"', () => {
-    expect(wrapper.state().mood).toEqual(
+    expect(wrapper.state().mood).to.equal(
       'happy', 'Default mood is incorrect.'
     );
   });
 
   it('default "happy" state should be accurately rendered', () => {
-    expect(wrapper.find('div').text()).toEqual(
+    expect(wrapper.find('div').text()).to.equal(
       'happy',
       'Default mood was incorrectly rendered.'
     );
@@ -39,7 +37,7 @@ describe('<DumbComponent />', function() {
 
   it('when clicked the div should toggle the state to "sad"', () => {
     wrapper.find('div').simulate('click');
-    expect(wrapper.state().mood).toEqual(
+    expect(wrapper.state().mood).to.equal(
       'sad',
       'Mood state not "sad" after click.'
     );
@@ -47,7 +45,7 @@ describe('<DumbComponent />', function() {
 
   it('after click, "sad" state should be accurately rendered', () => {
     wrapper.find('div').simulate('click');
-    expect(wrapper.find('div').text()).toEqual(
+    expect(wrapper.find('div').text()).to.equal(
       'sad',
       'Mood state incorrectly rendered after click.'
     );
