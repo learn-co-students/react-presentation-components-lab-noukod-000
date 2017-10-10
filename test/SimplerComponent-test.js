@@ -1,9 +1,12 @@
 import React from 'react';
 import { expect } from 'chai';
-import { shallow } from 'enzyme';
+import Enzyme, { shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import sinon from 'sinon';
 
 import SimplerComponent from '../src/components/SimplerComponent';
+
+Enzyme.configure({ adapter: new Adapter() })
 
 const Noop = (props) => { return <p>Noop</p> };
 
