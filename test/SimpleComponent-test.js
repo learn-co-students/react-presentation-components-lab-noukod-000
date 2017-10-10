@@ -1,8 +1,10 @@
 import React from 'react';
 import { expect } from 'chai';
-import { shallow } from 'enzyme';
-
+import Enzyme, { shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import SimpleComponent from '../src/components/SimpleComponent';
+
+Enzyme.configure({ adapter: new Adapter() })
 
 const Noop = (props) => { return <p>Noop</p> };
 
