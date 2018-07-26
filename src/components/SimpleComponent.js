@@ -1,1 +1,1 @@
-// Code SimpleComponentHere Here
+// Code SimpleComponent Here
