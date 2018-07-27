@@ -7,7 +7,7 @@ a stateless function.
 
 ## Overview
 
-Presentation components are also sometimes called "simple" components. Why?
+Presentational components are also sometimes called "simple" components. Why?
 Because other than rendering themselves, they really don't know how to do much
 else. But, as we've seen, there's something blissful about being "simple" if you
 are a component.
@@ -49,7 +49,7 @@ state entirely where possible.
 
 ## SimplerComponent
 
-Although our `SimpleComponent` fits the pattern of a presentation component, the
+Although our `SimpleComponent` fits the pattern of a presentational component, the
 fact that it has state makes it unstable. To practice building a more stable
 type of presentational component, let's build a `SimplerComponent` to meet the
 following specifications:
@@ -78,4 +78,4 @@ our component more predictable and easier to maintain.
 - Dan Abramov – ["Presentational and Container Components"](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
 - [Stateless Functions](https://facebook.github.io/react/docs/reusable-components.html#stateless-functions)
 
-<p class='util--hide'>View <a href='https://learn.co/lessons/react-presentation-components-lab'>Presentation Components Lab</a> on Learn.co and start learning to code for free.</p>
+<p class='util--hide'>View <a href='https://learn.co/lessons/react-presentation-components-lab'>Presentational Components Lab</a> on Learn.co and start learning to code for free.</p>
